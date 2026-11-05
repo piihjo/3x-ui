@@ -11,7 +11,6 @@ export function usePageTitle() {
   useEffect(() => {
     const key = PANEL_TITLE_KEYS[pathname];
     const title = key ? t(key) : '3X-UI';
-    const host = window.location.hostname;
-    document.title = host ? `${host} - ${title}` : title;
+    document.title = title;
   }, [pathname, t]);
 }

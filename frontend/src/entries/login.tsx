@@ -3,7 +3,6 @@ import { message } from 'antd';
 import 'antd/dist/reset.css';
 
 import { setupHttp } from '@/api/http-init';
-import { applyDocumentTitle } from '@/utils';
 import { readyI18n } from '@/i18n/react';
 import { AntdRootConfig } from '@/i18n/AntdRootConfig';
 import { ThemeProvider } from '@/hooks/useTheme';
@@ -11,7 +10,6 @@ import { QueryProvider } from '@/api/QueryProvider';
 import LoginPage from '@/pages/login/LoginPage';
 
 setupHttp();
-applyDocumentTitle();
 
 const messageContainer = document.getElementById('message');
 if (messageContainer) {
